@@ -1,5 +1,9 @@
 require 'pry'
 
 def leap_year(year)
-  year % 4 == 0
+  if year % 100 == 0
+    false
+  elsif year % 4 == 0
+    true
+  end
 end
